@@ -4,4 +4,4 @@ pipelines:
   default:
     - step:
         script:
-          - git push --mirror git@github.com:kjeld-dpg/design-tokens-freemium.git
+          - git push --all git@github.com:kjeld-dpg/design-tokens-freemium.git
