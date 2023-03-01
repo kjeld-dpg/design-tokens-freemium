@@ -8,6 +8,6 @@
     "tokens.json"
   ],
   "scripts": {
-    "release": "npm version patch -m \"Upgrade to %s [skip ci]\""
+    "release": "npm version patch --force -m \"Upgrade to %s [skip ci]\""
   }
 }
