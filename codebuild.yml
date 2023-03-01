@@ -1,0 +1,17 @@
+projectName: design-tokens-freemium
+buildType: node
+
+aws:
+  accountId: 871895356291
+  region: eu-west-1
+
+sonar:
+  enabled: false
+
+snyk:
+  enabled: false
+
+
+docker:
+  build:
+    enabled: false

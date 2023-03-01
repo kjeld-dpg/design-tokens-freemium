@@ -1,0 +1,19 @@
+version: 0.2
+
+env:
+  parameter-store:
+    build_ssh_key: "/all/codebuild/bitbucket/key"
+
+phases:
+  install:
+    commands:
+    - mkdir -p ~/.ssh
+    - echo "$build_ssh_key" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keygen -F bitbucket.org || ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+    - git clone -b feature/POP-4737 git@bitbucket.org:persgroep/popular-codebuild-library.git
+    - . ./popular-codebuild-library/scripts/init.sh
+  build:
+    commands:
+      - ./popular-codebuild-library/scripts/build.sh build
+
