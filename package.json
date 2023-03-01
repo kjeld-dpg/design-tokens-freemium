@@ -3,5 +3,6 @@
   "version": "0.1.2",
   "publishConfig": {
     "registry": "https://artifactory.persgroep.cloud/artifactory/api/npm/npm-local"
-  }
+  },
+  "release": "npm version patch -m \"Upgrade to %s [skip ci]\""
 }
