@@ -4,5 +4,7 @@
   "publishConfig": {
     "registry": "https://artifactory.persgroep.cloud/artifactory/api/npm/npm-local"
   },
-  "release": "npm version patch -m \"Upgrade to %s [skip ci]\""
+  "scripts": {
+    "release": "npm version patch -m \"Upgrade to %s [skip ci]\""
+  }
 }
