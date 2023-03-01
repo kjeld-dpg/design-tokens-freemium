@@ -1,7 +1,0 @@
-clone:
-  depth: full
-pipelines:
-  default:
-    - step:
-        script:
-          - git push --all git@github.com:kjeld-dpg/design-tokens-freemium.git
