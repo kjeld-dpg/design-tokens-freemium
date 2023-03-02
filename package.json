@@ -1,6 +1,6 @@
 {
   "name": "design-tokens-freemium",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "publishConfig": {
     "registry": "https://artifactory.persgroep.cloud/artifactory/api/npm/npm-local"
   },
