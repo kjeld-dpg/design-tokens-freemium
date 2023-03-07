@@ -1,6 +1,9 @@
 projectName: design-tokens-freemium
 buildType: node
 
+iac:
+  enabled: false
+
 aws:
   accountId: 871895356291
   region: eu-west-1
