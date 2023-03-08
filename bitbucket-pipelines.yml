@@ -1,5 +1,6 @@
 pipelines:
-  main:
-    - step:
-        script:
-          - git push git@github.com:kjeld-dpg/design-tokens-freemium.git main
+  branches:
+    main:
+      - step:
+          script:
+            - git push git@github.com:kjeld-dpg/design-tokens-freemium.git main
