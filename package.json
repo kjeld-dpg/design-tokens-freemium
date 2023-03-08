@@ -1,8 +1,13 @@
 {
   "name": "design-tokens-freemium",
-  "version": "0.1.2",
+  "version": "0.1.13",
   "publishConfig": {
     "registry": "https://artifactory.persgroep.cloud/artifactory/api/npm/npm-local"
   },
-  "release": "npm version patch -m \"Upgrade to %s [skip ci]\""
+  "files": [
+    "tokens.json"
+  ],
+  "scripts": {
+    "release": "npm version patch --force -m \"Upgrade to %s [skip ci]\""
+  }
 }
