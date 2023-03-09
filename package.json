@@ -8,6 +8,7 @@
     "tokens.json"
   ],
   "scripts": {
-    "release": "npm version patch --force -m \"Upgrade to %s [skip ci]\""
+    "release": "npm version patch --force -m \"Upgrade to %s [skip ci]\"",
+    "sync": "sh ./scripts/sync_github_to_bitbucket.sh"
   }
 }
