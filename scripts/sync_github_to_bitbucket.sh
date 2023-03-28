@@ -24,6 +24,7 @@ git checkout $BRANCH
 if [ $? == '0' ]
 then
     git pull github $BRANCH
+    git pull bitbucket $BRANCH
     git push bitbucket $BRANCH
 else
     echo 'Please provide a valid branch name'
