@@ -26,6 +26,9 @@ fi
 
 read -p 'Branch name: ' BRANCH
 
+git config pull.rebase false
+git config checkout.defaultRemote github
+
 git fetch --all --prune
 
 git checkout $BRANCH
