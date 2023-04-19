@@ -37,6 +37,7 @@ then
     git pull github $BRANCH
     git pull bitbucket $BRANCH
     git push bitbucket $BRANCH
+    git switch -
 else
     echo 'Please provide a valid branch name'
 fi
