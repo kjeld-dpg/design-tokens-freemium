@@ -36,6 +36,7 @@ if [ $? == '0' ]
 then
     git pull github $BRANCH
     git pull bitbucket $BRANCH
+    git pull github main
     git push bitbucket $BRANCH
     git switch -
 else
