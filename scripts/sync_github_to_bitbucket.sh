@@ -26,6 +26,9 @@ fi
 
 read -p 'Branch name: ' BRANCH
 
+git config pull.rebase false
+git config checkout.defaultRemote github
+
 git fetch --all --prune
 
 git checkout $BRANCH
@@ -33,7 +36,9 @@ if [ $? == '0' ]
 then
     git pull github $BRANCH
     git pull bitbucket $BRANCH
+    git pull github main
     git push bitbucket $BRANCH
+    git switch -
 else
     echo 'Please provide a valid branch name'
 fi
